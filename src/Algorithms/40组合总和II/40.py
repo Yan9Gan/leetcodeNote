@@ -25,11 +25,3 @@ class Solution:
         res = list()
         core_func(candidates, res, res_list)
         return res_list
-
-
-if __name__ == '__main__':
-    S = Solution()
-    candidates = [10, 1, 2, 7, 6, 1, 5]
-    target = 8
-    res = S.combinationSum2(candidates, target)
-    print(res)

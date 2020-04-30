@@ -19,10 +19,3 @@ class Solution:
             return True
         else:
             return False
-
-
-if __name__ == '__main__':
-    S = Solution()
-    num = 113245
-    result = S.isHappy(num)
-    print(result)
