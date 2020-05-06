@@ -23,10 +23,3 @@ class Solution:
                 stack.append(first)
 
         return stack[0]
-
-
-if __name__ == '__main__':
-    S = Solution()
-    tokens = ["2", "1", "+", "3", "*"]
-    res = S.evalRPN(tokens)
-    print(res)

@@ -15,11 +15,3 @@ class Solution:
                 stack[i] = stack[i-1]
 
         return stack[-1]
-
-
-if __name__ == '__main__':
-    S = Solution()
-    days = [1, 4, 6, 7, 8, 20]
-    costs = [2, 7, 15]
-    res = S.mincostTickets(days, costs)
-    print(res)
