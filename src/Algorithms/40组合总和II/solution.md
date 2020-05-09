@@ -11,15 +11,16 @@ candidates 中的每个数字在每个组合中只能使用一次。
 - 解集不能包含重复的组合。 
 
 示例:
-
-输入: candidates = [10, 1, 2, 7, 6, 1, 5], target = 8,\
-所求解集为:\
-[\
-&emsp;[1, 7],\
-&emsp;[1, 2, 5],\
-&emsp;[2, 6],\
-&emsp;[1, 1, 6]\
+```
+输入: candidates = [10, 1, 2, 7, 6, 1, 5], target = 8,
+所求解集为:
+[
+    [1, 7],
+    [1, 2, 5],
+    [2, 6],
+    [1, 1, 6]
 ]
+```
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/combination-sum-ii
