@@ -25,10 +25,3 @@ class Solution:
             index += 1
 
         return max(dp)
-
-
-if __name__ == '__main__':
-    S = Solution()
-    s = '()(())'
-    num = S.longestValidParentheses(s)
-    print(num)
