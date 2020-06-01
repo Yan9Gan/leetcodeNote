@@ -31,10 +31,3 @@ class Solution:
                 new.append(item)
 
         return new
-
-
-if __name__ == '__main__':
-    S = Solution()
-    intervals = [[1, 4], [0, 4]]
-    res = S.merge(intervals)
-    print(res)
