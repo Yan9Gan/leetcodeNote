@@ -20,10 +20,3 @@ class Solution:
                 min_price = item
 
         return max(dp)
-
-
-if __name__ == '__main__':
-    S = Solution()
-    prices = [7, 1, 5, 3, 6, 4]
-    num = S.maxProfit(prices)
-    print(num)
