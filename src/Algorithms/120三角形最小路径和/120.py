@@ -18,12 +18,3 @@ class Solution:
                     dp[row][column] = min(dp[row-1][column-1], dp[row-1][column]) + item
 
         return min(dp[-1])
-
-"""
-[
-    [2],
-    [5, 6],
-    [11, 10, 13],
-    [15, 11, 18, 16]
-]
-"""
