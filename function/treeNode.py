@@ -16,8 +16,8 @@ def create_tree_node(l, tree_node=None, i=0):
             return None  # 这里的return很重要
         else:
             tree_node = TreeNode(l[i])
-            tree_node.left = create_tree_node(l, tree_node.left, i+1)  # 从根开始一直到最左，直至为空，None 往右回溯
-            tree_node.right = create_tree_node(l, tree_node.right, i+2)  # 再返回上一个根，回溯右，None 再返回根
+            tree_node.left = create_tree_node(l, tree_node.left, 2*i+1)  # 从根开始一直到最左，直至为空，None 往右回溯
+            tree_node.right = create_tree_node(l, tree_node.right, 2*i+2)  # 再返回上一个根，回溯右，None 再返回根
             return tree_node  # 这里的return很重要
 
     return tree_node
@@ -115,8 +115,3 @@ def printTree(root):
                 cnt = cnt + 1
 
     print(pretty_output.getvalue())
-
-
-if __name__ == '__main__':
-    tree_node = create_tree_node([1, None, 2, 3])
-    printTree(tree_node)
