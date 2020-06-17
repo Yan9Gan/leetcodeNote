@@ -18,11 +18,3 @@ class Solution:
 
         for i in range(len(nums)):
             self.core(nums[:i]+nums[i+1:], curr+[nums[i]], res)
-
-
-if __name__ == '__main__':
-    S = Solution()
-    nums = [1, 2, 3]
-    res = S.permute(nums)
-    print(res)
-
