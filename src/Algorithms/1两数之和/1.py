@@ -4,12 +4,12 @@ from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        index = 0
-        while index < len(nums):
-            temp = target - nums[index]
-            if temp in nums[index+1:]:
-                return [index, index+1+nums[index+1:].index(temp)]
-            index += 1
+        hash = dict()
+        for i, num in enumerate(nums):
+            if target - num in hash:
+                return [hash[target-num], i]
+            hash[num] = i
+        return []
 
 
 if __name__ == '__main__':
